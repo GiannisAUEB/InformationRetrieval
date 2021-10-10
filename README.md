@@ -5,6 +5,14 @@ The purpose of the assignment is to practice classical methods and models of inf
 <h3>Description</h3>
 The project consists of four different phases using the same collection of texts known as <a href="http://ir.dcs.gla.ac.uk/resources/test_collections/lisa/">LISA</a>, for the purpose of testing our results on different methods.
 
+<h4>Made with</h4>
+<ul>
+  <li>JAVA
+  <li>Python
+  <li>Lucene
+  <li>DeepLearning4Java
+</ul>
+
 <h4>Phase 1</h4>
 
 <ol>
@@ -73,7 +81,7 @@ The representation of the collection as a table was done using JAVA, while the r
 
 In this phase I build a retrieval system, in which the representations of texts and queries will be implemented using word2vec.
 <ol>
-  <li>Train a word2vec (Code 2.0) model using the text collection as input and the DeepLearningForJava (DL4J) library.
+  <li>Train a word2vec model using the text collection as input and the DeepLearningForJava (DL4J) library.
   <li>From the word vectors created by the word2vec model, create the vectors of texts and queries by averaging the vectors of terms.
   <li>Calculate the cosine similarity of the questions to the texts in the new space. Sort the texts in descending order of similarity and collect the k texts with the highest similarity score, for k = 20, 30, 50.
   <li>Evaluate the answers by comparing them with the correct answers (file qrels.txt) using the trec_eval assessment tool and assessment measures MAP (mean average precision) and avgPre@k (average precision on the first k retrieved  texts) for k = 5, 10, 15, 20.
